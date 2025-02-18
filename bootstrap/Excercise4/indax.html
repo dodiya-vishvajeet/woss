@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">
+    <style>
+        .left {
+            background-color: #090446;
+            border-radius: 0% 50% 50% 0%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left;
+        }
+        @media screen and (max-width: 991px) {
+            .left {
+                border-radius: 0%;
+            }
+        }
+        .left img{
+            height: 100%;
+            width: 60%;
+            /* padding-right: 200px; */
+        }
+        .input_1 {
+            width: 100%;
+            height: 35px;
+            display: flex;
+            border: none;
+            outline: none;
+        }
+         .btn_1{
+            width: 100%;
+            height: 43px;
+            margin-top: 10px;
+        }
+        .img_2{
+            width: 100%;
+        }
+        .main_1
+        {
+            background-color: #b2abff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="row shadow-lg main_1">
+                <div class="col-lg-6 col-12 p-0">
+                    <div class="left">
+                        <img src="./img/Animation.png" alt="img" >
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 gap-5 align-items-center flex-column">
+                    <h1 class="display-4">
+                        <center>Welcome Back</center>
+                    </h1>
+                    <p>
+                        <center>Begin your journey with us today</center>
+                    </p>
+                    <form action="">
+                        <label for="name">Email / Username</label><br>
+                        <input class="input_1" type="text"><br>
+                        <label for="pass">password</label><br>
+                        <input class="input_1" type="password"><br>
+                        <input type="checkbox">
+                        <label for="">I accept the Terms & Conditions</label>
+                        <br>
+                        <input class="btn_1" type="button" value="Sign up">
+                        <h4 class="m-4"> <center>OR SIGN UP WITH</center></h4>
+                    </form>
+                    <ul class="list-unstyled d-flex justify-content-center gap-2 img_2">
+                        <li><img src="./img/instagram.png" alt=""></li>
+                        <li><img src="./img/facebook.png" alt=""></li>
+                        <li><img src="./img/google.png" alt=""></li>
+                        <li><img src="./img/twitter.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
