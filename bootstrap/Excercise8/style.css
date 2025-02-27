@@ -1,0 +1,61 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root{
+    --para-text-size:20px;
+    --hadding-text-size:40px;
+    --text-color:#505F98;
+    --btn-color:#111B47;
+    --h2-color:#091133;
+}
+body{
+    background-image: url(/bootstrap/Excercise8/img/bg.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+h1{
+    color: #37447E;
+    
+}
+a{
+    text-decoration: none;
+    margin:0px 10px 0px 10px ;
+    color: var(--text-color);
+}
+.my-btn{
+    border: none;
+    background-color: var(--btn-color);
+    width: 160px;
+    height: 26px;
+    border-radius: 2px;
+    color: white;
+}
+.my-btn1
+{
+    border: 1px solid var(--h2-color);
+    background-color: transparent;
+    width: 160px;
+    height: 26px;
+    border-radius: 2px;
+    color: var(--h2-color);
+}
+.section_1
+{
+    margin-left: 20px;
+}
+.section_1 h2 B {
+    color: var(--h2-color) ;
+}
+.section_1 p{
+    color: var(--text-color);
+    width: 88%;
+}
+body{
+
+    overflow: visible;
+}
