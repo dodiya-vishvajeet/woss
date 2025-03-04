@@ -26,7 +26,7 @@
 .main_bg_img {
     height: 110%;
     width: 100%;
-    background-image: url(/bootstrap/Excercise8/img/bg.png);
+    background-image: url(./img/bg.png);
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 70% 100%;
