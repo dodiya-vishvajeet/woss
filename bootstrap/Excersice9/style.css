@@ -11,7 +11,7 @@ body {
     background-image: url(./img/Shape.svg);
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: 25%;
+    background-size: 250px 250px;
 }
 
 button.mybtn {
@@ -54,6 +54,7 @@ button.mybtn1 {
 }
 .main_hedar{
     padding-bottom: 50px;
+    margin-top: 120px;
 
 }
 .main_hedar h1 {
@@ -144,6 +145,10 @@ background-repeat: no-repeat;
  border-bottom: #33363A 1px solid;
  padding-bottom: 60px;
 }
+.hero_section_heding
+{
+    margin-top: 50px;
+}
 .hero_section_heding h2{
 font-weight: 800;
 font-size: 40px;
@@ -216,5 +221,68 @@ font-size: 20px;
 line-height: 30px;
 letter-spacing: -0.25px;
 text-align: center;
+
+}
+.gallry_fest_project h6
+{
+font-family: "Architects Daughter";
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0.25px;
+color: #5D5DFF;
+}
+.gallry_fest_project h3
+{
+color: #D9E3EA;
+font-weight: 700;
+font-size: 32px;
+line-height: 42px;
+letter-spacing: -0.25px;
+
+
+}
+.gallry_fest_project p
+{
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: -0.25px;
+color: #D9E3EA;
+
+}
+.gallry_fest_project ul 
+{
+    list-style: none;
+    padding: 0;
+}
+.gallry_fest_project ul li
+{
+    color: #D9E3EA;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.25px;
+    margin-bottom: 10px;
+    
+}
+.gallry_fest_project ul li i
+{
+ color: #48BB78;
+ font-size: 18px;
+margin-right: 10px;
+}
+.gallry_photo_1 img
+{
+object-fit: cover;
+}
+.gallry_main_1
+{
+    margin-top: 80px;
+
+}
+.border_btm{
+    padding-bottom: 80px;
+    border-bottom: 1px solid  #33363A ;
 
 }
