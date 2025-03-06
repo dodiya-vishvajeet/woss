@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+
+}
+
+body {
+    background-color: #151719;
+    background-image: url(./img/Shape.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 25%;
+}
+
+button.mybtn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+form a {
+    text-decoration: none;
+    color: #C5D2DC;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+}
+
+form a:hover {
+    color: #ffffff;
+}
+
+button.mybtn:hover {
+    color: rgb(255, 255, 255);
+    background-color: #5D5DFF;
+}
+
+button.mybtn1:hover {
+    background-color: transparent;
+    color: #C5D2DC;
+
+}
+
+button.mybtn1 {
+    background-color: #5D5DFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: white;
+}
+.main_hedar{
+    padding-bottom: 50px;
+
+}
+.main_hedar h1 {
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #D9E3EA;
+
+}
+
+.main_hedar p {
+    width: 50%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.25px;
+    text-align: center;
+    color: #9BA9B4;
+
+}
+
+.mybtn2 {
+    background-color: #5D5DFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #FFFFFF;
+    padding: 8px 25px 8px 25px;
+    margin-right: 10px;
+
+}
+
+.mybtn3 {
+    background-color: #33363A;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #C5D2DC;
+    padding: 8px 25px 8px 25px;
+
+}
+
+.mybtn2:hover {
+    color: #C5D2DC;
+    background-color: #33363A;
+}
+
+.mybtn3:hover {
+    background-color: #5D5DFF;
+    color: #FFFFFF;
+
+}
+.video_main_section img{
+    height: 576px;
+    width: 100%; 
+    object-fit: cover;
+}
+
+/* .video_main_section
+{
+} */
+.mian_hero_section{
+    padding-block: 100px;
+    /* background-color: #5D5DFF; */
+    padding-inline: 0;
+    position: relative;
+}
+.play_btn 
+{
+position: absolute;
+top: 43%;
+left: 50%;
+}
+.mian_bg_img
+{
+background-image: url(./img/Combined\ Shape.png);
+background-position: bottom left;
+background-size:40% 50%;
+background-repeat: no-repeat;
+}
+.produt_section
+{
+ margin-top:80px;
+ border-bottom: #33363A 1px solid;
+ padding-bottom: 60px;
+}
+.hero_section_heding h2{
+font-weight: 800;
+font-size: 40px;
+line-height: 50px;
+letter-spacing: -0.5px;
+color: #D9E3EA;
+}
+.hero_section_heding p
+{
+font-weight: 400;
+font-size: 20px;
+width: 60%;
+letter-spacing: -0.25px;
+color: #9BA9B4;
+}
+.produt_card h3
+{
+    color: #D9E3EA;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -0.25px;
+    text-align: center;
+    
+}
+.produt_card p{
+color: #9BA9B4;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+letter-spacing: -0.25px;
+text-align: center;
+
+}
+.icon
+{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    margin-inline: auto;
+    background-color: #5D5DFF;
+}
+.icon img
+{
+    object-fit: cover;
+}
+.mybtn4 
+{
+   padding:0px 20px 0px 20px;
+   width: fit-content;
+    border:  none;
+    background-color: rgb(176, 255, 251);
+    color: green;
+}
+.gallry_section h3 {
+font-weight: 800;
+font-size: 40px;
+line-height: 50px;
+letter-spacing: -0.5px;
+text-align: center;
+color: #D9E3EA;
+}
+.gallry_section p{
+color: #9BA9B4;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: -0.25px;
+text-align: center;
+
+}
