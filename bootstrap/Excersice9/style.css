@@ -461,3 +461,7 @@ color: #9BA9B4;
     border-radius: 50%;
     margin-right: 10px ;
 }
+.social_icon i:hover {
+    background-color: #5D5DFF;
+    color: #25282C;
+}
