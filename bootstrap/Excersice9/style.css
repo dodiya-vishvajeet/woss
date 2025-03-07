@@ -39,9 +39,9 @@ button.mybtn:hover {
 }
 
 button.mybtn1:hover {
+    color: #5D5DFF;
     background-color: transparent;
-    color: #C5D2DC;
-
+    border: 1px solid #5D5DFF;
 }
 
 button.mybtn1 {
@@ -104,13 +104,16 @@ button.mybtn1 {
 }
 
 .mybtn2:hover {
-    color: #C5D2DC;
-    background-color: #33363A;
+    color: #5D5DFF;
+    background-color: transparent;
+    border: 1px solid #5D5DFF;
+
 }
 
 .mybtn3:hover {
-    background-color: #5D5DFF;
     color: #FFFFFF;
+    border: 1px solid #33363A;
+    background-color: transparent;
 
 }
 
@@ -404,46 +407,46 @@ button.mybtn1 {
     color: #5D5DFF;
 
 }
-.footer_main_section
-{
+
+.footer_main_section {
     color: #9BA9B4;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: -0.25px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
 
 }
-.footer_main_section_1 ul 
-{
-list-style: none;
+
+.footer_main_section_1 ul {
+    list-style: none;
 }
-.footer_main_section_1 ul li 
-{
-margin-bottom: 8px;
+
+.footer_main_section_1 ul li {
+    margin-bottom: 8px;
 }
-.footer_main_section_1 ul li h6
-{
-color: #D9E3EA;
-font-weight: 500;
-font-size: 14px;
-line-height: 22px;
-letter-spacing: 0px;
+
+.footer_main_section_1 ul li h6 {
+    color: #D9E3EA;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0px;
 }
-.footer_main_section_1 ul li a
-{
+
+.footer_main_section_1 ul li a {
     text-decoration: none;
-font-weight: 400;
-font-size: 14px;
-line-height: 22px;
-letter-spacing: 0px;
-color: #9BA9B4;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #9BA9B4;
 }
-.footer_main_section_1 ul li a:hover
-{
+
+.footer_main_section_1 ul li a:hover {
     color: #5D5DFF;
 }
-.copy_right
-{
+
+.copy_right {
     color: #9BA9B4;
     font-weight: 400;
     font-size: 14px;
@@ -451,16 +454,18 @@ color: #9BA9B4;
     letter-spacing: 0px;
     height: 100%;
     padding-top: 11px;
-   
+
 }
+
 .social_icon i {
     background-color: #25282C;
     color: #5D5DFF;
     padding: 10px;
     font-size: 20px;
     border-radius: 50%;
-    margin-right: 10px ;
+    margin-right: 10px;
 }
+
 .social_icon i:hover {
     background-color: #5D5DFF;
     color: #25282C;
