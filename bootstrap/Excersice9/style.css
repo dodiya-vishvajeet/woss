@@ -5,6 +5,9 @@
     font-family: "Inter";
 
 }
+button{
+    border-radius: 2px;
+}
 
 body {
     background-color: #151719;
