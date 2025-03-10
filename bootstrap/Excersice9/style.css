@@ -5,7 +5,8 @@
     font-family: "Inter";
 
 }
-button{
+
+button {
     border-radius: 2px;
 }
 
@@ -472,4 +473,119 @@ button.mybtn1 {
 .social_icon i:hover {
     background-color: #5D5DFF;
     color: #25282C;
+}
+
+.form_login h1 {
+    color: #D9E3EA;
+font-weight: 800;
+font-size: 52px;
+line-height: 62px;
+letter-spacing: -0.5px;
+text-align: center;
+
+}
+
+.form_login button {
+    width: 400px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    /* line-height: 24px; */
+    letter-spacing: -0.25px;
+    background-color: #E53D3E;
+    color: #FFFFFF;
+    border: none;
+    border: solid 1px transparent;
+
+
+}
+.form_login button:hover{
+    border: solid 1px #E53D3E;
+    background-color: transparent;
+    color: #FFFFFF;
+
+}
+
+
+.form_login button i {
+    border-right: 1px solid #F56565;
+    font-size: 20px;
+    color: #FED7D7;
+}
+.bdr_left{
+    border-bottom: 1px dotted #33363A ;
+    height: 30px;
+    width: 90px;
+    margin-right: 10px;
+
+}
+.bdr_right{
+    border-bottom: 1px dotted #33363A ;
+    height: 30px;
+    width: 90px;
+    margin-left: 10px;
+
+}
+.register{
+    width: fit-content;
+}
+form{
+    width: 400px;
+}
+label
+{
+    color: #C5D2DC;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0px;
+
+}
+input{
+    background-color: transparent !important;
+    border: 1px solid #33363A !important;
+    padding-block: 13px !important;
+}
+.policy
+{
+color: #6F7D86;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0px;
+text-align: center;
+}
+.policy a{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.mybtn_5{
+ width: 400px;
+ background-color: #5D5DFF;
+ border: 1px solid transparent;
+}
+.mybtn_5:hover
+{
+    background-color: transparent;
+    border: 1px solid #5D5DFF;
+}
+
+.fog_password a{
+    color: #5D5DFF;
+}
+@media (max-width:992px) {
+    .form_login h1{
+font-size: 30px !important;
+
+    }
+}
+@media (max-width:447px) {
+    .form_login button , form , .mybtn_5
+    { width: 330px;
+    }
+    .form_login h1{
+        font-size: 16px !important;
+        
+            }
+       
 }
