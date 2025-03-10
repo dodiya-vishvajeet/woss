@@ -578,8 +578,9 @@ text-align: center;
 @media (max-width:992px) {
     .form_login h1{
 font-size: 30px !important;
+line-height: 30px;
+}
 
-    }
 }
 @media (max-width:447px) {
     .form_login button , form , .mybtn_5
@@ -587,7 +588,19 @@ font-size: 30px !important;
     }
     .form_login h1{
         font-size: 16px !important;
-        
-            }
-       
+        line-height: 20px;
+            } 
+            
+}
+@media (max-width:447px) {
+    .main_hedar h1 {
+        font-size: 32px;
+                }
+
+                .gallry_section h3{
+                    font-size: 28px;
+                }
+              .testimonials_section  h3{
+                    font-size: 28px;
+                }
 }
