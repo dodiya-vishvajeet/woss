@@ -566,6 +566,9 @@ text-align: center;
  background-color: #5D5DFF;
  border: 1px solid transparent;
 }
+input::placeholder{
+    color: #707D86;
+}
 .mybtn_5:hover
 {
     background-color: transparent;
