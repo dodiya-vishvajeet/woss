@@ -47,7 +47,9 @@ button.mybtn1:hover {
     background-color: transparent;
     border: 1px solid #5D5DFF;
 }
-
+.nav_btn{
+    width: fit-content;
+}
 button.mybtn1 {
     background-color: #5D5DFF;
     font-weight: 500;
