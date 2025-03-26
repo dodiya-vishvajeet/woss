@@ -65,12 +65,12 @@ ul {
 }
 .hidden{
     // width: 0 !important;
-    padding: 0 1rem !important;
+    padding: 0 !important;
     height: 0 !important;
 }
 #sidebar{
-    padding: 1rem;
-    transition: 1s;
+    padding:0 1rem;
+    transition: .5s;
 }
 // .btn-toggle-nav{
 //     position: absolute;
