@@ -2,11 +2,31 @@
 
 .Sidebar_wrapper {
 
+    .mybtn2 {
+        border-bottom: 1px solid #000000;
+
+    }
 
     .mybtn1 {
         position: relative;
-        
+        color: aliceblue;
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        padding-top: 20px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #000000;
+        border-radius: 0 !important;
+
+        &:hover {
+            color: rgb(255, 255, 255);
+        }
+
         &.collapsed {
+
+
             &::after {
                 transform: rotate(180deg);
                 transition: all ease-in .2s;
@@ -21,11 +41,32 @@
             font-weight: 900;
             position: absolute;
             transition: all ease-in .2s;
-
             top: 50%;
             right: 0;
             transform: translateY(-50%);
         }
 
     }
+}
+
+ul {
+    li {
+        a {
+            color: white;
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            padding-bottom: 5px; 
+
+        }
+    }
+}
+
+.btn-toggle-nav{
+    position: absolute;
+    background-color: #262626;
+    z-index: 11;
+    width: 230px;
 }
