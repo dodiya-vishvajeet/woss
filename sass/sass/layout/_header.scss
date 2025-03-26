@@ -1,32 +1,49 @@
 .header-wrapper {
 
     header {
+        background-color: #171717;
+
         nav {
             ul {
                 li {
                     a {
-                        
-                        i{
+
+                        i {
                             margin-right: 5px;
                             font-size: 15px;
-                color: #ffff;
+                            color: #ffff;
 
                         }
-            p{
-                color: #ffff;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 100%;
-            }
+
+                        p {
+                            color: #ffff;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 100%;
+                            font-family: Poppins;
+                            
+
+                        }
+                        :hover{
+                            color: #6d6d6d;
+                       }
                     }
                 }
             }
-            .nav_profile{
+
+            .nav_profile {
                 background-color: #ffff;
                 padding: 10px;
                 margin: 6px 10px 6px 6px;
-                p{
+
+                p {
                     margin: 0px 10px 0px 10px;
+                    font-family: Poppins;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+
                 }
             }
         }
