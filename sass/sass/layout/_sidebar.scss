@@ -63,7 +63,14 @@ ul {
         }
     }
 }
-
+.hidden{
+    width: 0 !important;
+    padding: 0 !important;
+}
+#sidebar{
+    padding: 1rem;
+    // transition: .2s;
+}
 // .btn-toggle-nav{
 //     position: absolute;
 //     background-color: #262626;
