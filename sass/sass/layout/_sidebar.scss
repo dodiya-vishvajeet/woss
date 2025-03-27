@@ -58,19 +58,31 @@ ul {
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0%;
-            padding-bottom: 5px; 
+            padding-bottom: 5px;
 
         }
     }
 }
-.hidden{
-    // width: 0 !important;
-    padding: 0 !important;
-    height: 0 !important;
+
+
+
+.Sidebar_wrapper {
+
+    width: 260px;
+    background-color: #262626;
+    height: calc(100vh - 52px);
+    overflow: auto;
+    scrollbar-width: none;
 }
-#sidebar{
-    padding:0 1rem;
-    transition: .5s;
+
+
+
+
+@media screen and (max-width: 768px) {
+.hidden {
+    display: none;
+        width: 0;
+    }
 }
 // .btn-toggle-nav{
 //     position: absolute;
