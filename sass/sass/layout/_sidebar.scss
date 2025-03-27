@@ -1,17 +1,24 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
 
+
+.wrapper{
+    background-color:#F5F5F5;
+}
+
+
+
 .Sidebar_wrapper {
     z-index: 100;
-    position: relative;
+    position: fixed;
 
     .mybtn2 {
         border-bottom: 1px solid #030303;
         
         button{
-            padding: 10px 60px 10px 20px;
+            padding: 10px 100px 10px 20px;
             margin-top: 15px;
             margin-left: 17px;
-            background-color: aquamarine;
+            background-color: #E5E5E5;
 
 
         }

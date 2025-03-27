@@ -1,0 +1,78 @@
+.add_data {
+    .data_sale {
+        margin-left: 270px;
+        display: flex;
+        background-color: white ;
+        border-radius: 10px;
+        padding: 15px;
+        min-width: 160px;
+       
+
+
+        img {
+            margin: 5px;
+
+        }
+
+        p {
+            margin-bottom: 0;
+            font-family: Poppins;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            margin: 10px;
+
+        }
+
+        h2 {
+            margin-bottom: 0;
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            margin: 10px;
+
+
+        }
+    }
+    .data_sale1{
+        margin-left: 0px;
+
+    }
+    
+    .data_sale2 {
+        margin-left: 0px;
+
+    }
+}
+
+
+@media screen and (max-width:850px)
+{
+    .data_sale3{
+        margin-left: 270px !important;
+    }
+    .data_sale2 {
+        margin-left: 0px !important ;}
+}
+
+@media screen and (max-width:1250px)
+{
+    .data_sale2 {
+         margin-left: 270px !important ;}
+}
+@media screen and (max-width:768px)
+{
+
+    .data_sale {
+        margin-left:0 !important;
+
+    }
+    
+    .data_sale2 {
+        margin-left:0 !important;
+    }
+
+}
