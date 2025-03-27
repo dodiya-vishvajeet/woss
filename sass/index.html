@@ -40,19 +40,19 @@
         </nav>
     </header>
   </div>
-
-  <div class="Sidebar_wrapper hidden " id="sidebar">
-    <div class="flex-shrink-0 ">
-      <a href="#" class="d-flex  pb-3  text-decoration-none  mybtn2">
-        <button class="btn bg-light"> <i class="fa-solid fa-plus pe-2"></i>New Item</button>
+<div class="wrapper d-flex ">
+  <div class="Sidebar_wrapper hidden  " id="sidebar">
+    <div class="flex-shrink-0   ">
+      <a href="#" class="d-flex flex-nowrap   pb-3  text-decoration-none  mybtn2">
+        <button class="btn bg-light "> <i class="fa-solid fa-plus pe-2"></i>New Item</button>
       </a>
       <ul class="list-unstyled ps-0">
         <li >
-          <button class="btn mybtn1 w-100  btn-toggle d-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collaps" aria-expanded="false">
+          <button class="btn mybtn1 w-100  btn-toggle d-flex flex-nowrap align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collaps" aria-expanded="false">
             <img class="me-3" src="./img/darhboard.svg" alt="">Dashboard
           </button>
           <div class="collapse" id="dashboard-collaps">
-            <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column gap-2">
+            <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column flex-nowrap gap-2">
               <li><a href="#" class="text-decoration-none  ps-5 rounded">Commarce</a></li>
               <li><a href="#" class="text-decoration-none  ps-5 rounded">Analytics</a></li>
               <li><a href="#" class="text-decoration-none  ps-5 rounded">Cyrpto</a></li>
@@ -171,6 +171,24 @@
     </div>
 
   </div>
+
+  <div class="add_new_post_wrapper container-fluid d-flex   justify-content-between">
+    <div class="row main_add w-100">
+<div class="add d-flex align-items-center wrap-nowrap col">
+  <h1 class="text-nowrap">Add new post</h1>
+  <h2 class="text-nowrap"> <i class="fa-solid fa-plus"></i>Add Content</h2>
+  <h2 class="text-nowrap"><i class="fa-solid fa-gear"></i>Settings</h2>
+</div>
+
+  <div class=" search_box col justify-items-end">
+    <form class="d-flex wrap-nowrap ">
+      <input class="form-control" type="search" placeholder="Search content.." aria-label="Search">
+    </form>
+  </div>
+</div>
+  </div>
+</div>
+
 
 
     <script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js" ></script>
