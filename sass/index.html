@@ -1,249 +1,284 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>database</title>
-    <link rel="stylesheet" href="/sass/style.css">
-    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>database</title>
+  <link rel="stylesheet" href="/sass/style.css">
+  <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
-    
-  <div class="header-wrapper">
- <header>
-        <nav>
-          <div class="container-fluid w-100 d-flex   align-items-center   justify-content-between  flex-wrap ">
-            <div class="navbar_icon">
-            <ul class=" my-auto list-unstyled gap-4  d-flex p-2 ">
-    <button class=" px-2 d-block d-md-none" id="myBtn" style="border: none; outline: none;"><i class="fa-solid fa-arrow-right-to-bracket"></i></i></button>
 
-              <li><a class="text-decoration-none d-flex    text-center " href="#"><i class="fa-solid fa-house text-center"></i><p class="my-auto d-none d-md-block ">Home</p></a></li>
-              <li><a class="text-decoration-none d-flex    text-center " href="#"><i class="fa-solid fa-list"></i><p class="my-auto d-none d-md-block">Contents</p></a></li>
-              <li><a class="text-decoration-none d-flex    text-center " href="#"><i class="fa-solid fa-list text-center "></i><p class="my-auto d-none d-md-block">Categories</p></a></li>
-              <li><a class="text-decoration-none d-flex    text-center " href="#"><i class="fa-solid fa-gear"></i><p class="my-auto d-none d-md-block">Settings</p></a></li>
-              
+  <div class="header-wrapper">
+    <header>
+      <nav>
+        <div class="container-fluid w-100 d-flex   align-items-center   justify-content-between  flex-wrap ">
+          <div class="navbar_icon">
+            <ul class=" my-auto list-unstyled gap-4  d-flex p-2 ">
+              <button class=" px-2 d-block d-md-none" id="myBtn" style="border: none; outline: none;"><i
+                  class="fa-solid fa-arrow-right-to-bracket"></i></i></button>
+
+              <li><a class="text-decoration-none d-flex    text-center " href="#"><i
+                    class="fa-solid fa-house text-center"></i>
+                  <p class="my-auto d-none d-md-block ">Home</p>
+                </a></li>
+              <li><a class="text-decoration-none d-flex    text-center " href="#"><i class="fa-solid fa-list"></i>
+                  <p class="my-auto d-none d-md-block">Contents</p>
+                </a></li>
+              <li><a class="text-decoration-none d-flex    text-center " href="#"><i
+                    class="fa-solid fa-list text-center "></i>
+                  <p class="my-auto d-none d-md-block">Categories</p>
+                </a></li>
+              <li><a class="text-decoration-none d-flex    text-center " href="#"><i class="fa-solid fa-gear"></i>
+                  <p class="my-auto d-none d-md-block">Settings</p>
+                </a></li>
+
             </ul>
           </div>
           <div class="nav_profile d-flex rounded-pill  " style="margin-left: auto;">
             <img src="./img/profile_photo.jpeg" alt="" height="30" width="30" class=" rounded-circle">
             <p class="my-auto">İsmail İhsan Bülbül</p>
           </div>
-          </div>
-        </nav>
+        </div>
+      </nav>
     </header>
   </div>
-<div class="wrapper d-flex ">
+  <div class="wrapper d-flex ">
 
-  <div class="Sidebar_wrapper hidden text-nowrap " id="sidebar">
-    <div class="flex-shrink-0   ">
-      <a href="#" class="d-flex  pb-3  text-decoration-none  mybtn2">
-        <button class="btn "> <i class="fa-solid fa-plus pe-2"></i>New Item</button>
-      </a>
-      <ul class="list-unstyled ps-0">
-        <li >
-          <button class="btn mybtn1 w-100  btn-toggle d-flex flex-nowrap align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collaps" aria-expanded="false">
-            <img class="me-3" src="./img/darhboard.svg" alt="">Dashboard
-          </button>
-          <div class="collapse" id="dashboard-collaps">
-            <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column flex-nowrap gap-2">
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Commarce</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Analytics</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Cyrpto</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Helpdesk</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Monitoring</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Fitnes</a></li>
-            </ul>
-          </div>
-        </li>
-        <li >
-          <button class="btn mybtn1 w-100  btn-toggle d-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-            <img class="me-3" src="./img/darhboard.svg" alt="">Application
-          </button>
-          <div class="collapse" id="dashboard-collapse">
-            <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column gap-2">
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Commarce</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Analytics</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Cyrpto</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Helpdesk</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Monitoring</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Fitnes</a></li>
-            </ul>
-          </div>
-        </li>
-        <li >
-          <button class="btn mybtn1 w-100 btn-toggle d-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collap" aria-expanded="false">
-            <img class="me-3" src="./img/darhboard.svg" alt="">Elements
-          </button>
-          <div class="collapse" id="dashboard-collap">
-            <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column gap-2">
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Commarce</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Analytics</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Cyrpto</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Helpdesk</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Monitoring</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Fitnes</a></li>
-            </ul>
-          </div>
-        </li>
-        <li >
-          <button class="btn mybtn1 w-100 btn-toggle d-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#Forms" aria-expanded="false">
-            <img class="me-3" src="./img/darhboard.svg" alt="">Forms
-          </button>
-          <div class="collapse" id="Forms">
-            <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column gap-2">
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Commarce</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Analytics</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Cyrpto</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Helpdesk</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Monitoring</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Fitnes</a></li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <button class="btn mybtn1 w-100   btn-toggle d-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#Plugins" aria-expanded="false">
-            <img class="me-3" src="./img/darhboard.svg" alt="">Plugins
-          </button>
-          <div class="collapse" id="Plugins">
-            <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column gap-2">
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Commarce</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Analytics</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Cyrpto</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Helpdesk</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Monitoring</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Fitnes</a></li>
-            </ul>
-          </div>
-        </li>
-        <li >
-          <button class="btn mybtn1 w-100   btn-toggle d-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#Elements" aria-expanded="false">
-            <img class="me-3" src="./img/darhboard.svg" alt="">Elements
-          </button>
-          <div class="collapse" id="Elements">
-            <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column gap-2">
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Commarce</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Analytics</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Cyrpto</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Helpdesk</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Monitoring</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Fitnes</a></li>
-            </ul>
-          </div>
-        </li>
-        <li >
-          <button class="btn mybtn1 w-100  btn-toggle d-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#Datagrid" aria-expanded="false">
-            <img class="me-3" src="./img/darhboard.svg" alt="">Datagrid
-          </button>
-          <div class="collapse" id="Datagrid">
-            <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column gap-2">
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Commarce</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Analytics</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Cyrpto</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Helpdesk</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Monitoring</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Fitnes</a></li>
-            </ul>
-          </div>
-        </li>
-        <li >
-          <button class="btn mybtn1 w-100  btn-toggle d-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#Settings" aria-expanded="false">
-            <img class="me-3" src="./img/darhboard.svg" alt="">Settings
-          </button>
-          <div class="collapse" id="Settings">
-            <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column gap-2">
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Commarce</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Analytics</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Cyrpto</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Helpdesk</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Monitoring</a></li>
-              <li><a href="#" class="text-decoration-none  ps-5 rounded">Fitnes</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
+    <div class="Sidebar_wrapper hidden text-nowrap " id="sidebar">
+      <div class="flex-shrink-0   ">
+        <a href="#" class="d-flex  pb-3  text-decoration-none  mybtn2">
+          <button class="btn "> <i class="fa-solid fa-plus pe-2"></i>New Item</button>
+        </a>
+        <ul class="list-unstyled ps-0">
+          <li>
+            <button class="btn mybtn1 w-100  btn-toggle d-flex flex-nowrap align-items-center rounded collapsed"
+              data-bs-toggle="collapse" data-bs-target="#dashboard-collaps" aria-expanded="false">
+              <img class="me-3" src="./img/darhboard.svg" alt="">Dashboard
+            </button>
+            <div class="collapse" id="dashboard-collaps">
+              <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column flex-nowrap gap-2">
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Commarce</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Analytics</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Cyrpto</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Helpdesk</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Monitoring</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Fitnes</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="btn mybtn1 w-100  btn-toggle d-flex align-items-center rounded collapsed"
+              data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+              <img class="me-3" src="./img/darhboard.svg" alt="">Application
+            </button>
+            <div class="collapse" id="dashboard-collapse">
+              <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column gap-2">
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Commarce</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Analytics</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Cyrpto</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Helpdesk</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Monitoring</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Fitnes</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="btn mybtn1 w-100 btn-toggle d-flex align-items-center rounded collapsed"
+              data-bs-toggle="collapse" data-bs-target="#dashboard-collap" aria-expanded="false">
+              <img class="me-3" src="./img/darhboard.svg" alt="">Elements
+            </button>
+            <div class="collapse" id="dashboard-collap">
+              <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column gap-2">
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Commarce</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Analytics</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Cyrpto</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Helpdesk</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Monitoring</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Fitnes</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="btn mybtn1 w-100 btn-toggle d-flex align-items-center rounded collapsed"
+              data-bs-toggle="collapse" data-bs-target="#Forms" aria-expanded="false">
+              <img class="me-3" src="./img/darhboard.svg" alt="">Forms
+            </button>
+            <div class="collapse" id="Forms">
+              <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column gap-2">
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Commarce</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Analytics</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Cyrpto</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Helpdesk</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Monitoring</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Fitnes</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="btn mybtn1 w-100   btn-toggle d-flex align-items-center rounded collapsed"
+              data-bs-toggle="collapse" data-bs-target="#Plugins" aria-expanded="false">
+              <img class="me-3" src="./img/darhboard.svg" alt="">Plugins
+            </button>
+            <div class="collapse" id="Plugins">
+              <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column gap-2">
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Commarce</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Analytics</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Cyrpto</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Helpdesk</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Monitoring</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Fitnes</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="btn mybtn1 w-100   btn-toggle d-flex align-items-center rounded collapsed"
+              data-bs-toggle="collapse" data-bs-target="#Elements" aria-expanded="false">
+              <img class="me-3" src="./img/darhboard.svg" alt="">Elements
+            </button>
+            <div class="collapse" id="Elements">
+              <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column gap-2">
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Commarce</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Analytics</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Cyrpto</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Helpdesk</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Monitoring</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Fitnes</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="btn mybtn1 w-100  btn-toggle d-flex align-items-center rounded collapsed"
+              data-bs-toggle="collapse" data-bs-target="#Datagrid" aria-expanded="false">
+              <img class="me-3" src="./img/darhboard.svg" alt="">Datagrid
+            </button>
+            <div class="collapse" id="Datagrid">
+              <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column gap-2">
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Commarce</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Analytics</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Cyrpto</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Helpdesk</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Monitoring</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Fitnes</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="btn mybtn1 w-100  btn-toggle d-flex align-items-center rounded collapsed"
+              data-bs-toggle="collapse" data-bs-target="#Settings" aria-expanded="false">
+              <img class="me-3" src="./img/darhboard.svg" alt="">Settings
+            </button>
+            <div class="collapse" id="Settings">
+              <ul class="btn-toggle-nav list-unstyled  pb-1 d-flex flex-column gap-2">
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Commarce</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Analytics</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Cyrpto</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Helpdesk</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Monitoring</a></li>
+                <li><a href="#" class="text-decoration-none  ps-5 rounded">Fitnes</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
     </div>
 
-  </div>
+    <div class="add_new_post_wrapper container-fluid d-flex   justify-content-between">
+      <div class="row g-0 main_add w-100">
+        <div class="add d-flex align-items-center ms-3  col">
+          <h1 class="text-nowrap">Add new post</h1>
+          <h2 class="text-nowrap"> <i class="fa-solid fa-plus"></i>Add Content</h2>
+          <h2 class="text-nowrap"><i class="fa-solid fa-gear"></i>Settings</h2>
+        </div>
 
-  <div class="add_new_post_wrapper container-fluid d-flex   justify-content-between">
-    <div class="row g-0 main_add w-100">
-<div class="add d-flex align-items-center ms-3  col">
-  <h1 class="text-nowrap">Add new post</h1>
-  <h2 class="text-nowrap"> <i class="fa-solid fa-plus"></i>Add Content</h2>
-  <h2 class="text-nowrap"><i class="fa-solid fa-gear"></i>Settings</h2>
-</div>
+        <div class=" search_box col justify-items-end">
+          <form class="d-flex  ">
+            <input class="for-control" type="search" placeholder="Search content.." aria-label="Search">
+          </form>
+        </div>
+      </div>
 
-  <div class=" search_box col justify-items-end">
-    <form class="d-flex  ">
-      <input class="for-control" type="search" placeholder="Search content.." aria-label="Search">
-    </form>
-  </div>
-</div>
+      <!-- data add section -->
+      <div class="row add_data  g-5 w-100 my-3 ">
+        <div class="col-12 col-lg-3 col-sm-6 mt-2 ps-5 ">
+          <div class="data_sale">
+            <img src="./img/Vector (1).svg" alt="" height="45" width="45">
+            <div>
+              <p>Total Sales</p>
+              <h2>$2,456</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-6 mt-2 ps-5 ">
+          <div class="data_sale  data_sale1">
+            <img src="./img/u_shop.svg" alt="" height="45" width="45">
+            <div>
+              <p>Total Sales</p>
+              <h2>$2,456</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-6 mt-2 ps-5 ">
+          <div class="data_sale  data_sale1 data_sale3">
+            <img src="./img/u_users-alt.svg" alt="" height="45" width="45">
+            <div>
+              <p>Total Sales</p>
+              <h2>$2,456</h2>
+            </div>
+          </div>
+        </div>
+        <div class="  col-12 col-lg-3 col-sm-6 mt-2 ps-5 ">
+          <div class="data_sale data_sale2">
+            <img src="./img/Vector (2).svg" alt="" height="45" width="45">
+            <div>
+              <p>Total Sales</p>
+              <h2>$2,456</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .table_data  -->
 
-<!-- data add section -->
-<div class="row add_data g-0 gap-5 my-3">
-  <div class="col-4 col-md-2 col-sm-3  data_sale ">
+      <div class="table_data">
+        
+      </div>
 
-    <img src="./img/Vector (1).svg" alt="" height="45" width="45">
-    <div>
-      <p>Total Sales</p>
-      <h2>$2,456</h2>
+
+
+
     </div>
   </div>
-  <div class="col-4 col-md-2 col-sm-3 data_sale  data_sale1 ">
-
-    <img src="./img/u_shop.svg" alt="" height="45" width="45">
-    <div>
-      <p>Total Sales</p>
-      <h2>$2,456</h2>
-    </div>
-  </div>
-  <div class="col-4 col-md-2 col-sm-3  data_sale  data_sale1 data_sale3">
-
-    <img src="./img/u_users-alt.svg" alt="" height="45" width="45">
-    <div>
-      <p>Total Sales</p>
-      <h2>$2,456</h2>
-    </div>
-  </div>
-  <div class=" data_sale data_sale2 col-4 col-md-2 col-sm-3  ">
-
-    <img src="./img/Vector (2).svg" alt="" height="45" width="45">
-    <div>
-      <p>Total Sales</p>
-      <h2>$2,456</h2>
-    </div>
-  </div>
-  
-  </div>
-</div>
-</div>
 
 
 
 
-    <script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 <script>
   let myBtn = document.getElementById('myBtn')
-    let sidebar = document.getElementById('sidebar')
+  let sidebar = document.getElementById('sidebar')
 
-    myBtn.addEventListener('click', toggleSidebar)
+  myBtn.addEventListener('click', toggleSidebar)
 
-    function toggleSidebar() {
-        sidebar.classList.toggle('hidden')
-    }
+  function toggleSidebar() {
+    sidebar.classList.toggle('hidden')
+  }
 </script>
 
 </html>

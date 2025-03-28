@@ -1,6 +1,5 @@
 .add_data {
     .data_sale {
-        margin-left: 270px;
         display: flex;
         background-color: white ;
         border-radius: 10px;
@@ -49,30 +48,7 @@
 }
 
 
-@media screen and (max-width:850px)
-{
-    .data_sale3{
-        margin-left: 270px !important;
-    }
-    .data_sale2 {
-        margin-left: 0px !important ;}
-}
 
-@media screen and (max-width:1250px)
-{
-    .data_sale2 {
-         margin-left: 270px !important ;}
-}
-@media screen and (max-width:768px)
-{
 
-    .data_sale {
-        margin-left:0 !important;
 
-    }
-    
-    .data_sale2 {
-        margin-left:0 !important;
-    }
 
-}
