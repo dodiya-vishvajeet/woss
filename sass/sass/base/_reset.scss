@@ -11,4 +11,12 @@ body{
 
 html{
     width: 100%;
+    :focus{
+        box-shadow: none !important;
+
+    }
+
 }
+   
+
+
