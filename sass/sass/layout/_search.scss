@@ -3,6 +3,7 @@
 
 .add_new_post_wrapper {
   height: fit-content;
+  width: calc(100% - 260px) !important;
 display: flex;
 flex-direction: column;
 margin-left: 260px !important;
@@ -79,6 +80,7 @@ padding: 0px !important;
 @media screen and (max-width:768px){
   .add_new_post_wrapper{
         margin-left: 0px !important;
+        width: 100% !important;
 
     }
     .add h1{
