@@ -67,10 +67,9 @@ padding: 0px !important;
 
 
 
-
 .search_box input {
   height: 45px;
-
+  min-width: 200px !important;
    border-radius: 5px;
     border: 1px solid #D4D4D4; 
     border-right: none; 
@@ -81,7 +80,6 @@ padding: 0px !important;
    border-radius: 5px;
    background-color: transparent;
    outline: none;
-   padding-left: 50px;
    margin-right: 35px;
   border: 1px solid #D4D4D4;  
 }
