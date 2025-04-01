@@ -54,6 +54,7 @@
 
             .btn_edti {
                 background-color: #1D4ED8;
+                border: 1px solid transparent;
                 color: #FFFFFF;
                 padding: 3px 10px 3px 10px;
                 border-radius: 3px;
@@ -63,12 +64,16 @@
                 font-size: 12px;
                 line-height: 100%;
                 letter-spacing: 0%;
+                &:hover{
+                background-color: transparent ;
+                border: 1px solid #1D4ED8;
+                color: #1D4ED8;
+                }
 
             }
 
             .btn_delete {
                 padding: 3px 10px 3px 10px;
-
                 background-color: #D97706;
                 color: #FFFFFF;
                 border-radius: 3px;
@@ -78,6 +83,11 @@
                 font-size: 12px;
                 line-height: 100%;
                 letter-spacing: 0%;
+                &:hover{
+                    background-color: transparent ;
+                    border: 1px solid #D97706;
+                    color: #D97706;
+                    }
 
             }
         }

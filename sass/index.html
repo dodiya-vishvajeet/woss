@@ -195,17 +195,20 @@
 
     </div>
 
-    <div class="add_new_post_wrapper container-fluid d-flex  justify-content-between">
+    <div class="add_new_post_wrapper container-fluid d-flex  justify-content-between">  
       <div class="row g-0 main_add w-100">
-        <div class="add d-flex align-items-center ms-3  col">
+        <div class="add d-flex align-items-center ms-3 gap-4 col">
           <h1 class="text-nowrap">Add new post</h1>
           <h2 class="text-nowrap"> <i class="fa-solid fa-plus"></i>Add Content</h2>
           <h2 class="text-nowrap"><i class="fa-solid fa-gear"></i>Settings</h2>
         </div>
 
         <div class=" search_box col justify-items-end">
-          <form class="d-flex  ">
-            <input class="for-control" type="search" placeholder="Search content.." aria-label="Search">
+          <form class="d-flex ">
+            <div class="input-group d-flex flex-nowrap">
+              <input type="text" class="form-control" placeholder="Search content..">
+              <span class="input-group-text "><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
           </form>
         </div>
       </div>
@@ -411,7 +414,7 @@
       </div>
 
        <!-- from_seation -->
-      <div class="from_warrper">
+      <div class="from_warrper pb-0">
         <h2 class="">Form title</h2>
         <p>Sed tortor, sed velit ridiculus ipsum pharetra lacus odio gravida augue enim.</p>
         <!-- Nav tabs -->
@@ -516,7 +519,7 @@
             aria-labelledby="profile-tab"
           >
 
-          <form>
+          <form class="from_main_inp">
               
               <div class="">
                 <label for="inp1"> Etiket başlığı </label>
@@ -567,8 +570,8 @@
 
 
  <div class="footer_warrper">
-  <div class="row m-0 g-5 ">
-    <div class="col-md-8 col-12 p-0 pe-4  ">
+  <div class="row m-0">
+    <div class="col-md-8 col-12 px-0">
     <div class="footer_warrper1">
 
       <h2>Form title</h2>
@@ -613,7 +616,7 @@
     </div>
     </div>
 
-    <div class="col-md-4 col-12  p-0 ">
+    <div class="col-md-4 col-12 p-0 ">
       <div class="footer_warrper2">
         <h2>Form title</h2>
             <div class="container-fluid m-0 p-0">
@@ -638,6 +641,10 @@
                 <div class="mb-3">
                   <label class="form-label m-0">Label Title</label>
                   <textarea class="form-control" rows="4" placeholder="Placeholder content"></textarea>
+                </div>
+
+                <div class="text-center">
+                  <button class="px-3 py-3 w-100" >Button title</button>
                 </div>
               </form>
             </div>

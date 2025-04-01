@@ -13,5 +13,53 @@
     justify-content: center;
     flex-direction: $direction;
 }
+@mixin from_css{
+        label {
+            font-family: Poppins;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #262626;
+        }
 
+        input {
+            &::placeholder {
+
+
+                border-radius: 5px;
+                font-family: Poppins;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #262626;
+
+            }
+        }
+
+        select {
+            font-family: Poppins;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #262626;
+        }
+
+        textarea {
+            &::placeholder {
+                border-radius: 5px;
+                font-family: Poppins;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #262626;
+
+            }
+
+
+    }
+}
 
