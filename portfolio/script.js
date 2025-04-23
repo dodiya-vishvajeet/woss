@@ -22,7 +22,7 @@ themeSwitch.addEventListener('change', () => {
         body.classList.add('dark-mode');
         localStorage.setItem('theme', 'dark');
     }
-    
+
     // Update logo particles color when theme changes
     updateParticlesColor();
 });
@@ -31,11 +31,11 @@ themeSwitch.addEventListener('change', () => {
 function updateParticlesColor() {
     const logoParticles = document.querySelectorAll('.logo-particle');
     const color = body.classList.contains('dark-mode') ? 'var(--primary-color-dark)' : 'var(--primary-color-light)';
-    
+
     logoParticles.forEach(particle => {
         particle.style.background = color;
     });
-    
+
     // Also update floating elements
     const floatingElements = document.querySelectorAll('.floating-circle, .floating-square');
     floatingElements.forEach(el => {
@@ -53,11 +53,11 @@ let cursorY = 0;
 document.addEventListener('mousemove', (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
-    
+
     // Check if cursor is hovering over a link or button
     const target = e.target;
     if (
-        target.tagName.toLowerCase() === 'a' || 
+        target.tagName.toLowerCase() === 'a' ||
         target.tagName.toLowerCase() === 'button' ||
         target.classList.contains('cta-button') ||
         target.closest('a') ||
@@ -82,12 +82,12 @@ document.addEventListener('mousemove', (e) => {
 // Smooth cursor following animation
 const updateCursorPosition = () => {
     const speed = 0.1;
-    
+
     cursorX += (mouseX - cursorX) * speed;
     cursorY += (mouseY - cursorY) * speed;
-    
-    cursorFollower.style.transform = `translate(${cursorX - cursorFollower.offsetWidth/2}px, ${cursorY - cursorFollower.offsetHeight/2}px)`;
-    
+
+    cursorFollower.style.transform = `translate(${cursorX - cursorFollower.offsetWidth / 2}px, ${cursorY - cursorFollower.offsetHeight / 2}px)`;
+
     requestAnimationFrame(updateCursorPosition);
 };
 
@@ -140,16 +140,16 @@ const sections = document.querySelectorAll('section');
 
 function updateActiveNavLink() {
     let current = '';
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop - 150;
         const sectionHeight = section.clientHeight;
-        
+
         if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
             current = section.getAttribute('id');
         }
     });
-    
+
     navLinkElements.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') && link.getAttribute('href').substring(1) === current) {
@@ -175,14 +175,14 @@ let isTyping = true;
 
 function typeEffect() {
     if (!typewriterText) return; // Safety check
-    
+
     const currentPhrase = phrases[phraseIndex];
-    
+
     if (isTyping) {
         // Typing
         typewriterText.textContent = currentPhrase.substring(0, charIndex + 1);
         charIndex++;
-        
+
         if (charIndex === currentPhrase.length) {
             isTyping = false;
             setTimeout(typeEffect, 1500); // Wait before starting to delete
@@ -193,7 +193,7 @@ function typeEffect() {
         // Deleting
         typewriterText.textContent = currentPhrase.substring(0, charIndex);
         charIndex--;
-        
+
         if (charIndex === 0) {
             isTyping = true;
             phraseIndex = (phraseIndex + 1) % phrases.length; // Move to next phrase
@@ -223,7 +223,7 @@ function animateStats() {
         const duration = 2000; // 2 seconds
         const step = target / (duration / 16); // 60fps -> ~16ms per frame
         let current = 0;
-        
+
         const updateCounter = () => {
             current += step;
             if (current < target) {
@@ -233,7 +233,7 @@ function animateStats() {
                 stat.textContent = target;
             }
         };
-        
+
         updateCounter();
     });
 }
@@ -246,12 +246,12 @@ filterButtons.forEach(button => {
     button.addEventListener('click', () => {
         // Remove active class from all buttons
         filterButtons.forEach(btn => btn.classList.remove('active'));
-        
+
         // Add active class to clicked button
         button.classList.add('active');
-        
+
         const filterValue = button.getAttribute('data-filter');
-        
+
         projectCards.forEach(card => {
             // Show all if 'all' filter is selected
             if (filterValue === 'all') {
@@ -260,7 +260,7 @@ filterButtons.forEach(button => {
                     card.style.transform = 'scale(1)';
                     card.style.opacity = '1';
                 }, 10);
-            } 
+            }
             // Show only matching category
             else if (card.getAttribute('data-category') === filterValue) {
                 card.style.display = 'block';
@@ -268,7 +268,7 @@ filterButtons.forEach(button => {
                     card.style.transform = 'scale(1)';
                     card.style.opacity = '1';
                 }, 10);
-            } 
+            }
             // Hide non-matching
             else {
                 card.style.transform = 'scale(0.8)';
@@ -287,33 +287,33 @@ const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         // Get form values
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const subject = document.getElementById('subject').value;
         const message = document.getElementById('message').value;
-        
+
         // Form validation
         if (!name || !email || !message) {
             alert('Please fill out all required fields.');
             return;
         }
-        
+
         // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             alert('Please enter a valid email address.');
             return;
         }
-        
+
         // Here you would typically send this data to a server
         // For demo purposes, let's just log it to console
         console.log('Form submitted:', { name, email, subject, message });
-        
+
         // Show success message (you can enhance this)
         alert('Thank you for your message! I will get back to you soon.');
-        
+
         // Reset form
         contactForm.reset();
     });
@@ -324,21 +324,21 @@ const logoParticles = document.querySelector('.logo-particles');
 
 if (logoParticles) {
     const particleCount = 15;
-    
+
     for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('span');
         particle.classList.add('logo-particle');
-        
+
         // Random position within the logo
         const posX = Math.random() * 100;
         const posY = Math.random() * 100;
-        
+
         // Random size
         const size = Math.random() * 3 + 1;
-        
+
         // Random animation delay
         const delay = Math.random() * 2;
-        
+
         // Apply styles
         particle.style.cssText = `
             position: absolute;
@@ -350,7 +350,7 @@ if (logoParticles) {
             border-radius: 50%;
             animation: particleAnimation 3s infinite ease-in-out ${delay}s;
         `;
-        
+
         logoParticles.appendChild(particle);
     }
 
@@ -401,12 +401,12 @@ const observer = new IntersectionObserver((entries) => {
             if (entry.target.id === 'skills') {
                 animateSkills();
             }
-            
+
             // If about section comes into view, animate the stats
             if (entry.target.id === 'about') {
                 animateStats();
             }
-            
+
             // Add animation class to section
             entry.target.classList.add('animate-in');
         }
@@ -416,7 +416,7 @@ const observer = new IntersectionObserver((entries) => {
 // Observe all sections
 sections.forEach(section => {
     observer.observe(section);
-    
+
     // Add base class for animations
     section.classList.add('reveal-section');
 });
@@ -449,7 +449,7 @@ if (parallaxBg) {
     // Add floating elements to the parallax background
     for (let i = 0; i < 20; i++) {
         const floatingEl = document.createElement('div');
-        
+
         // Random properties
         const size = Math.random() * 30 + 10;
         const posX = Math.random() * 100;
@@ -457,10 +457,10 @@ if (parallaxBg) {
         const opacity = Math.random() * 0.1 + 0.05;
         const duration = Math.random() * 10 + 10;
         const delay = Math.random() * 5;
-        
+
         // Create shape - alternate between circles and squares
         floatingEl.classList.add(i % 2 === 0 ? 'floating-circle' : 'floating-square');
-        
+
         // Apply styles
         floatingEl.style.cssText = `
             position: absolute;
@@ -473,7 +473,7 @@ if (parallaxBg) {
             border-radius: ${i % 2 === 0 ? '50%' : '5px'};
             animation: float ${duration}s infinite ease-in-out ${delay}s;
         `;
-        
+
         parallaxBg.appendChild(floatingEl);
     }
 
@@ -507,25 +507,25 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         document.body.classList.add('loaded');
     }, 500);
-    
+
     // Make sure first filter button is active if it exists
     if (filterButtons.length > 0) {
         filterButtons[0].classList.add('active');
     }
-    
+
     // Set all projects visible initially
     projectCards.forEach(card => {
         card.style.display = 'block';
         card.style.transform = 'scale(1)';
         card.style.opacity = '1';
     });
-    
+
     // Add initial animations for hero section
     const heroContent = document.querySelector('.hero-content');
     if (heroContent) {
         heroContent.classList.add('animate-in');
     }
-    
+
     // Start typewriter effect
     if (typewriterText) {
         setTimeout(typeEffect, 1000);
@@ -534,29 +534,29 @@ window.addEventListener('load', () => {
 
 
 
-  // Initialize EmailJS
-  (function() {
+// Initialize EmailJS
+(function () {
     emailjs.init("t-4q9QbZEIXjUr_Ch"); // ✅ Your Public Key
-  })();
+})();
 
-  // Send Email Function
-  const sendEmail = (e) => {
+// Send Email Function
+const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_90tvv2i',   // ✅ Your Service ID
-      'template_k36dmxj',  // ✅ Your Template ID
-      e.target             // ✅ The form element
+        'service_90tvv2i',   // ✅ Your Service ID
+        'template_k36dmxj',  // ✅ Your Template ID
+        e.target             // ✅ The form element
     ).then(
-      (result) => {
-        console.log('Email sent successfully:', result.text);
-        alert('Message sent successfully!');
-        e.target.reset(); // Clear the form
-      },
-      (error) => {
-        console.log('Email send failed:', error.text);
-        alert('Failed to send message. Please try again!');
-      }
+        (result) => {
+            console.log('Email sent successfully:', result.text);
+            alert('Message sent successfully!');
+            e.target.reset(); // Clear the form
+        },
+        (error) => {
+            console.log('Email send failed:', error.text);
+            alert('Failed to send message. Please try again!');
+        }
     );
-  };
+};
 

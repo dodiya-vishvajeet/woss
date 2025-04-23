@@ -11,7 +11,7 @@
     --bg-alt-color-light: #f9f9f9;
     --border-color-light: #eaeaea;
     --shadow-color-light: rgba(0, 0, 0, 0.1);
-    
+
     /* Dark Theme Colors */
     --primary-color-dark: #8c7dff;
     --secondary-color-dark: #ff7a97;
@@ -20,7 +20,7 @@
     --bg-alt-color-dark: #16213e;
     --border-color-dark: #30475e;
     --shadow-color-dark: rgba(0, 0, 0, 0.3);
-    
+
     /* Common Variables */
     --transition: all 0.3s ease-in-out;
     --border-radius: 8px;
@@ -45,6 +45,12 @@ body {
     background-color: var(--bg-color-light);
     color: var(--text-color-light);
     transition: var(--transition);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+
 }
 
 body.dark-mode {
@@ -52,7 +58,12 @@ body.dark-mode {
     color: var(--text-color-dark);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 1.2;
@@ -89,8 +100,8 @@ section {
 /* ===== CURSOR FOLLOWER ===== */
 .cursor-follower {
     position: fixed;
-  filter: blur(10px) opacity(70%);
-  width: 20px;
+    filter: blur(10px) opacity(70%);
+    width: 20px;
     height: 20px;
     background-color: #2b20f9 !important;
     border-radius: 50%;
@@ -309,6 +320,7 @@ nav {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -362,63 +374,83 @@ nav {
     0% {
         clip: rect(36px, 9999px, 9px, 0);
     }
+
     5% {
         clip: rect(85px, 9999px, 66px, 0);
     }
+
     10% {
         clip: rect(151px, 9999px, 146px, 0);
     }
+
     15% {
         clip: rect(140px, 9999px, 161px, 0);
     }
+
     20% {
         clip: rect(93px, 9999px, 68px, 0);
     }
+
     25% {
         clip: rect(163px, 9999px, 130px, 0);
     }
+
     30% {
         clip: rect(148px, 9999px, 144px, 0);
     }
+
     35% {
         clip: rect(164px, 9999px, 71px, 0);
     }
+
     40% {
         clip: rect(146px, 9999px, 34px, 0);
     }
+
     45% {
         clip: rect(75px, 9999px, 100px, 0);
     }
+
     50% {
         clip: rect(26px, 9999px, 22px, 0);
     }
+
     55% {
         clip: rect(76px, 9999px, 149px, 0);
     }
+
     60% {
         clip: rect(116px, 9999px, 157px, 0);
     }
+
     65% {
         clip: rect(133px, 9999px, 39px, 0);
     }
+
     70% {
         clip: rect(8px, 9999px, 99px, 0);
     }
+
     75% {
         clip: rect(150px, 9999px, 28px, 0);
     }
+
     80% {
         clip: rect(97px, 9999px, 29px, 0);
     }
+
     85% {
         clip: rect(160px, 9999px, 64px, 0);
     }
+
     90% {
         clip: rect(79px, 9999px, 98px, 0);
     }
+
     95% {
         clip: rect(106px, 9999px, 54px, 0);
     }
+
     100% {
         clip: rect(42px, 9999px, 22px, 0);
     }
@@ -428,63 +460,83 @@ nav {
     0% {
         clip: rect(132px, 9999px, 90px, 0);
     }
+
     5% {
         clip: rect(64px, 9999px, 166px, 0);
     }
+
     10% {
         clip: rect(137px, 9999px, 52px, 0);
     }
+
     15% {
         clip: rect(99px, 9999px, 165px, 0);
     }
+
     20% {
         clip: rect(2px, 9999px, 21px, 0);
     }
+
     25% {
         clip: rect(37px, 9999px, 6px, 0);
     }
+
     30% {
         clip: rect(114px, 9999px, 72px, 0);
     }
+
     35% {
         clip: rect(60px, 9999px, 91px, 0);
     }
+
     40% {
         clip: rect(70px, 9999px, 163px, 0);
     }
+
     45% {
         clip: rect(129px, 9999px, 165px, 0);
     }
+
     50% {
         clip: rect(144px, 9999px, 53px, 0);
     }
+
     55% {
         clip: rect(146px, 9999px, 33px, 0);
     }
+
     60% {
         clip: rect(95px, 9999px, 140px, 0);
     }
+
     65% {
         clip: rect(29px, 9999px, 130px, 0);
     }
+
     70% {
         clip: rect(163px, 9999px, 147px, 0);
     }
+
     75% {
         clip: rect(16px, 9999px, 70px, 0);
     }
+
     80% {
         clip: rect(71px, 9999px, 121px, 0);
     }
+
     85% {
         clip: rect(35px, 9999px, 22px, 0);
     }
+
     90% {
         clip: rect(150px, 9999px, 164px, 0);
     }
+
     95% {
         clip: rect(42px, 9999px, 23px, 0);
     }
+
     100% {
         clip: rect(46px, 9999px, 64px, 0);
     }
@@ -510,9 +562,12 @@ nav {
 }
 
 @keyframes blink {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
@@ -593,6 +648,7 @@ nav {
         opacity: 0;
         transform: translate(-50%, 20px);
     }
+
     to {
         opacity: 1;
         transform: translate(-50%, 0);
@@ -631,6 +687,7 @@ nav {
         transform: translateY(0);
         opacity: 1;
     }
+
     100% {
         transform: translateY(15px);
         opacity: 0;
@@ -669,9 +726,11 @@ nav {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -770,7 +829,7 @@ nav {
 .image-wrapper img {
     transition: transform 0.5s ease;
     width: 75%;
-    
+
 }
 
 .image-wrapper:hover img {
@@ -844,6 +903,7 @@ nav {
     0% {
         transform: translate(0, 0) rotate(0deg);
     }
+
     100% {
         transform: translate(15px, 15px) rotate(360deg);
     }
@@ -1382,8 +1442,8 @@ nav {
     color: var(--text-color-dark);
 }
 
-.form-input:focus ~ .form-label,
-.form-input:not(:placeholder-shown) ~ .form-label {
+.form-input:focus~.form-label,
+.form-input:not(:placeholder-shown)~.form-label {
     top: -10px;
     left: 10px;
     font-size: 0.85rem;
@@ -1392,8 +1452,8 @@ nav {
     color: var(--primary-color-light);
 }
 
-.dark-mode .form-input:focus ~ .form-label,
-.dark-mode .form-input:not(:placeholder-shown) ~ .form-label {
+.dark-mode .form-input:focus~.form-label,
+.dark-mode .form-input:not(:placeholder-shown)~.form-label {
     background: var(--bg-alt-color-dark);
     color: var(--primary-color-dark);
 }
@@ -1478,20 +1538,20 @@ footer {
     html {
         font-size: 14px;
     }
-    
+
     .about-content,
     .contact-container {
         flex-direction: column;
     }
-    
+
     .about-image {
         margin-bottom: 40px;
     }
-    
+
     .menu-toggle {
         display: flex;
     }
-    
+
     .nav-links {
         position: fixed;
         top: 70px;
@@ -1509,26 +1569,26 @@ footer {
         box-shadow: 0 5px 15px var(--shadow-color-light);
         z-index: 99;
     }
-    
+
     .dark-mode .nav-links {
         background: var(--bg-color-dark);
         box-shadow: 0 5px 15px var(--shadow-color-dark);
     }
-    
+
     .nav-links.active {
         transform: translateY(0);
         opacity: 1;
         pointer-events: all;
     }
-    
+
     .menu-toggle.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    
+
     .menu-toggle.active .bar:nth-child(2) {
         opacity: 0;
     }
-    
+
     .menu-toggle.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
@@ -1538,23 +1598,23 @@ footer {
     section {
         padding: 70px 0;
     }
-    
+
     .hero-content h1 {
         font-size: 2.5rem;
     }
-    
+
     .typewriter {
         font-size: 1.2rem;
     }
-    
+
     .projects-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
-    
+
     .section-header h2 {
         font-size: 2rem;
     }
-    
+
     .footer-content {
         flex-direction: column;
         gap: 20px;
@@ -1565,21 +1625,21 @@ footer {
     .hero-content h1 {
         font-size: 2rem;
     }
-    
+
     .typewriter {
         font-size: 1rem;
     }
-    
+
     .cta-buttons {
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .stat-item {
         min-width: 100%;
         margin-bottom: 15px;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
