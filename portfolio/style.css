@@ -89,20 +89,21 @@ section {
 /* ===== CURSOR FOLLOWER ===== */
 .cursor-follower {
     position: fixed;
-    width: 20px;
+  filter: blur(10px) opacity(70%);
+  width: 20px;
     height: 20px;
-    background: var(--primary-color-light);
+    background-color: #2b20f9 !important;
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    transition: width 0.2s, height 0.2s, background 0.2s;
+    transition: width 0.2s, height 0.2s, background 0.01s;
     z-index: 9999;
     mix-blend-mode: difference;
-    opacity: 0.7;
+    opacity: 7;
 }
 
 .dark-mode .cursor-follower {
-    background: var(--primary-color-dark);
+    background-color: #a200ff !important;
 }
 
 /* ===== THEME TOGGLE ===== */
@@ -756,30 +757,27 @@ nav {
     border-radius: var(--border-radius);
     overflow: hidden;
     position: relative;
-    box-shadow: 0 10px 30px var(--shadow-color-light);
+    /* box-shadow: 0 10px 30px var(--shadow-color-light); */
     transition: var(--transition);
+    display: flex;
+    justify-content: end;
 }
 
 .dark-mode .image-wrapper {
-    box-shadow: 0 10px 30px var(--shadow-color-dark);
+    /* box-shadow: 0 10px 30px var(--shadow-color-dark); */
 }
 
 .image-wrapper img {
     transition: transform 0.5s ease;
+    width: 75%;
+    
 }
 
 .image-wrapper:hover img {
     transform: scale(1.05);
 }
 
-.image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
-}
+
 
 .floating-shapes {
     position: absolute;

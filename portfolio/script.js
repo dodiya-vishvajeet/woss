@@ -1,3 +1,4 @@
+
 // ===== THEME TOGGLE FUNCTIONALITY =====
 const themeSwitch = document.getElementById('theme-switch');
 const body = document.body;
@@ -163,7 +164,7 @@ window.addEventListener('scroll', updateActiveNavLink);
 const typewriterText = document.getElementById('typewriter-text');
 const phrases = [
     'Web Developer',
-    'UI/UX Designer',
+    'Web Designer',
     'Frontend Specialist',
     'Creative Coder'
 ];
@@ -530,3 +531,32 @@ window.addEventListener('load', () => {
         setTimeout(typeEffect, 1000);
     }
 });
+
+
+
+  // Initialize EmailJS
+  (function() {
+    emailjs.init("t-4q9QbZEIXjUr_Ch"); // ✅ Your Public Key
+  })();
+
+  // Send Email Function
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_90tvv2i',   // ✅ Your Service ID
+      'template_k36dmxj',  // ✅ Your Template ID
+      e.target             // ✅ The form element
+    ).then(
+      (result) => {
+        console.log('Email sent successfully:', result.text);
+        alert('Message sent successfully!');
+        e.target.reset(); // Clear the form
+      },
+      (error) => {
+        console.log('Email send failed:', error.text);
+        alert('Failed to send message. Please try again!');
+      }
+    );
+  };
+

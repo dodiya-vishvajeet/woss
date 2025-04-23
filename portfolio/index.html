@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="dark-mode">
@@ -73,7 +74,7 @@
             <div class="about-content">
                 <div class="about-image">
                     <div class="image-wrapper">
-                        <img src="/portfolio/img/my_photo.jpeg" alt="Profile Picture">
+                        <img src="/portfolio/img/businessman-raising-one-finger-illustration-download-in-svg-png-gif-file-formats - man-attention-business-people-pack-illustrations-4436978.png" alt="Profile Picture">
                         <div class="image-overlay"></div>
                     </div>
                     <div class="floating-shapes">
@@ -86,18 +87,18 @@
                 <div class="about-text">
                     <p>Hello! I'm a passionate <span class="highlight">web developer</span> with a keen eye for design and a love for creating interactive, user-friendly websites.</p>
                     <p>My journey in web development started several years ago, and I've been constantly learning and improving my skills ever since.</p>
-                    <p>When I'm not coding, you might find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.</p>
+                    <p>When I'm not coding, you might find me exploring new technologies,  or enjoying outdoor activities.</p>
                     <div class="stats-container">
                         <div class="stat-item">
-                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-number" data-count="5">0</span>
                             <span class="stat-text">Projects Completed</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number" data-count="5">0</span>
+                            <span class="stat-number" data-count="1">0</span>
                             <span class="stat-text">Years Experience</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number" data-count="30">0</span>
+                            <span class="stat-number" data-count="4">0</span>
                             <span class="stat-text">Happy Clients</span>
                         </div>
                     </div>
@@ -137,51 +138,46 @@
                             <div class="skill-info">
                                 <h4>JavaScript</h4>
                                 <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="50"></div>
+                                </div>
+                            </div>
+                        </div>
+                     
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 style=" visibility: hidden;">Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="bs5">
+                            <div class="skill-icon"><i class="fa-brands fa-bootstrap"></i></div>
+                            <div class="skill-info">
+                                <h4>Bootstrap</h4>
+                                <div class="skill-bar">
                                     <div class="skill-progress" data-progress="85"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="skill-item" data-skill="React">
-                            <div class="skill-icon"><i class="fab fa-react"></i></div>
-                            <div class="skill-info">
-                                <h4>React</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="80"></div>
-                                </div>
+
+                        <div class="skill-item" data-skill="tailwin">
+                            <div class="skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0" fill="#6c63ff"/></svg>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3>Backend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item" data-skill="Node.js">
-                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
                             <div class="skill-info">
-                                <h4>Node.js</h4>
+                                <h4>Tailwind CSS</h4>
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-progress="75"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="skill-item" data-skill="Python">
-                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <div class="skill-item" data-skill="sass">
+                            <div class="skill-icon"><i class="fa-brands fa-sass"></i></div>
                             <div class="skill-info">
-                                <h4>Python</h4>
+                                <h4>sass</h4>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="70"></div>
+                                    <div class="skill-progress" data-progress="80"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="skill-item" data-skill="MongoDB">
-                            <div class="skill-icon"><i class="fas fa-database"></i></div>
-                            <div class="skill-info">
-                                <h4>MongoDB</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="65"></div>
-                                </div>
-                            </div>
-                        </div>
+    
                     </div>
                 </div>
             </div>
@@ -192,91 +188,85 @@
                 <h2>My Projects</h2>
                 <div class="section-line"></div>
             </div>
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="app">App</button>
-                <button class="filter-btn" data-filter="design">Design</button>
-            </div>
+        
             <div class="projects-grid">
                 <div class="project-card" data-category="web">
                     <div class="project-image">
-                        <img src="/api/placeholder/400/300" alt="Project 1">
+                        <img src="/portfolio/img/pro1.png" alt="Project 1">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://woss-noht-dodiya-vishvajeets-projects.vercel.app/" class="project-link"><i class="fas fa-eye"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>E-commerce Website</h3>
-                        <p>A full-featured online store with payment processing and inventory management.</p>
+                        <h3>Share Averaging Calculator</h3>
+                        <p>"This is a Share Average Calculator designed to help you calculate your investment averages easily. Simply input your data and let the tool do the math!"</p>
                         <div class="project-tags">
                             <span class="project-tag">HTML</span>
                             <span class="project-tag">CSS</span>
                             <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">Node.js</span>
+        
                         </div>
                     </div>
                 </div>
                 <div class="project-card" data-category="app">
                     <div class="project-image">
-                        <img src="/api/placeholder/400/300" alt="Project 2">
+                        <img src="/portfolio/img/pro2.png" alt="Project 2">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://woss-dodiya-vishvajeets-projects.vercel.app/" class="project-link"><i class="fas fa-eye"></i></a>
+
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Task Manager App</h3>
-                        <p>A productivity application for managing tasks and schedules with reminder features.</p>
+                        <h3>Landie demo website</h3>
+                        <p>"A streamlined interface built for performance and clarity — this demo exemplifies modern business web design."</p>
                         <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Node.js</span>
-                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">Bootstrap</span>
                         </div>
                     </div>
                 </div>
                 <div class="project-card" data-category="design">
                     <div class="project-image">
-                        <img src="/api/placeholder/400/300" alt="Project 3">
+                        <img src="/portfolio/img/pro3.png" alt="Project 3">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://woss-8owu.vercel.app/" class="project-link"><i class="fas fa-eye"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Brand Identity Design</h3>
-                        <p>Complete brand identity package including logo, color scheme, and style guide.</p>
+                        <h3>zeta demo website</h3>
+                        <p>"Crafted for professionals, this demo highlights efficiency, responsiveness, and a user-first approach."</p>
                         <div class="project-tags">
-                            <span class="project-tag">Photoshop</span>
-                            <span class="project-tag">Illustrator</span>
-                            <span class="project-tag">Figma</span>
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">Bootstrap</span>
                         </div>
                     </div>
                 </div>
                 <div class="project-card" data-category="web">
                     <div class="project-image">
-                        <img src="/api/placeholder/400/300" alt="Project 4">
+                        <img src="/portfolio/img/project4.png" alt="Project 4">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://woss-wofx-dodiya-vishvajeets-projects.vercel.app/" class="project-link"><i class="fas fa-eye"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Portfolio Website</h3>
-                        <p>A responsive portfolio website with modern design elements and animations.</p>
+                        <h3>Dashboard</h3>
+                        <p>"A robust admin panel crafted for control, clarity, and seamless management at every level."</p>
                         <div class="project-tags">
                             <span class="project-tag">HTML</span>
-                            <span class="project-tag">CSS</span>
                             <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">Bootstrap</span>
+                            <span class="project-tag">sass</span>
                         </div>
                     </div>
                 </div>
@@ -296,7 +286,7 @@
                         </div>
                         <div class="contact-text">
                             <h3>Email</h3>
-                            <p>your.email@example.com</p>
+                            <p>dodiyavishvajeet1@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -305,7 +295,7 @@
                         </div>
                         <div class="contact-text">
                             <h3>Phone</h3>
-                            <p>+123 456 7890</p>
+                            <p>+91 9712529320</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -314,7 +304,7 @@
                         </div>
                         <div class="contact-text">
                             <h3>Location</h3>
-                            <p>City, Country</p>
+                            <p>Ahmedabad , Gujarat , India </p>
                         </div>
                     </div>
                     <div class="social-links">
@@ -325,28 +315,28 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form id="contactForm" onsubmit="sendEmail(event)">
                         <div class="form-group">
-                            <input type="text" id="name" class="form-input" placeholder="Your Name" required>
-                            <label for="name" class="form-label">Name</label>
+                          <input type="text" name="user_name" id="name" class="form-input" placeholder="Your Name" required>
+                          <label for="name" class="form-label">Name</label>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" class="form-input" placeholder="Your Email" required>
-                            <label for="email" class="form-label">Email</label>
+                          <input type="email" name="user_email" id="email" class="form-input" placeholder="Your Email" required>
+                          <label for="email" class="form-label">Email</label>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="subject" class="form-input" placeholder="Subject" required>
-                            <label for="subject" class="form-label">Subject</label>
+                          <input type="text" name="subject" id="subject" class="form-input" placeholder="Subject" required>
+                          <label for="subject" class="form-label">Subject</label>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" class="form-input" placeholder="Your Message" required></textarea>
-                            <label for="message" class="form-label">Message</label>
+                          <textarea name="message" id="message" class="form-input" placeholder="Your Message" required></textarea>
+                          <label for="message" class="form-label">Message</label>
                         </div>
                         <button type="submit" class="submit-btn">
-                            <span class="btn-text">Send Message</span>
-                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                          <span class="btn-text">Send Message</span>
+                          <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
                         </button>
-                    </form>
+                      </form>                      
                 </div>
             </div>
         </section>
@@ -355,7 +345,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-text">
-                <p>&copy; 2025 Your Name. All rights reserved.</p>
+                <p>&copy; 2025 Dodiya Vishvajeet. All rights reserved.</p>
             </div>
             <div class="back-to-top">
                 <a href="#home" id="scrollToTop">
