@@ -69,8 +69,8 @@ document.addEventListener('mousemove', (e) => {
         cursorFollower.style.background = 'rgba(108, 99, 255, 0.2)';
     } else {
         cursorFollower.classList.remove('hover');
-        cursorFollower.style.width = '20px';
-        cursorFollower.style.height = '20px';
+        // cursorFollower.style.width = '20px';
+        // cursorFollower.style.height = '20px';
         if (body.classList.contains('dark-mode')) {
             cursorFollower.style.background = 'var(--primary-color-dark)';
         } else {
