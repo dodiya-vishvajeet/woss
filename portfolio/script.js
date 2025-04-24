@@ -51,8 +51,8 @@ let cursorX = 0;
 let cursorY = 0;
 
 document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+    // mouseX = e.clientX;
+    // mouseY = e.clientY;
 
     // Check if cursor is hovering over a link or button
     const target = e.target;
@@ -64,8 +64,8 @@ document.addEventListener('mousemove', (e) => {
         target.closest('button')
     ) {
         cursorFollower.classList.add('hover');
-        cursorFollower.style.width = '40px';
-        cursorFollower.style.height = '40px';
+        // cursorFollower.style.width = '40px';
+        // cursorFollower.style.height = '40px';
         cursorFollower.style.background = 'rgba(108, 99, 255, 0.2)';
     } else {
         cursorFollower.classList.remove('hover');

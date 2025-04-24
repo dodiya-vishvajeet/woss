@@ -7,9 +7,9 @@
     --primary-color-light: #6c63ff;
     --secondary-color-light: #ff6584;
     --text-color-light: #333;
-    --bg-color-light: #fff;
-    --bg-alt-color-light: #f9f9f9;
-    --border-color-light: #eaeaea;
+    --bg-color-light: #b4afefbb;
+    --bg-alt-color-light: #9284dcd4;
+    --border-color-light: #eaeaeacb;
     --shadow-color-light: rgba(0, 0, 0, 0.1);
 
     /* Dark Theme Colors */
@@ -97,25 +97,6 @@ section {
     padding: 0 20px;
 }
 
-/* ===== CURSOR FOLLOWER ===== */
-.cursor-follower {
-    position: fixed;
-    filter: blur(10px) opacity(70%);
-    width: 20px;
-    height: 20px;
-    background-color: #2b20f9 !important;
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: width 0.2s, height 0.2s, background 0.01s;
-    z-index: 9999;
-    mix-blend-mode: difference;
-    opacity: 7;
-}
-
-.dark-mode .cursor-follower {
-    background-color: #a200ff !important;
-}
 
 /* ===== THEME TOGGLE ===== */
 .theme-toggle {
@@ -369,7 +350,7 @@ nav {
     text-shadow: 2px 0 blue;
     animation: glitch-animation-2 3s infinite linear alternate-reverse;
 }
-
+/* 
 @keyframes glitch-animation-1 {
     0% {
         clip: rect(36px, 9999px, 9px, 0);
@@ -540,7 +521,7 @@ nav {
     100% {
         clip: rect(46px, 9999px, 64px, 0);
     }
-}
+} */
 
 .typewriter {
     margin-bottom: 30px;
@@ -929,6 +910,7 @@ nav {
     justify-content: space-between;
     margin-top: 40px;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .stat-item {
