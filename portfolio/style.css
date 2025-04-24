@@ -1550,11 +1550,11 @@ footer {
 
     .menu-toggle {
         display: flex;
-        margin-right: 40px;
+        margin-right: -40px;
     }
     .theme-toggle{
         top: 13px;
-        right: 0;
+        right: 40px;
     }
 
     .nav-links {
