@@ -300,14 +300,17 @@ if (contactForm) {
             return;
         }
 
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    
+        // Simple email validation regex
+        const emailRegex = /^[a-zA-Z0-9]+([._%+-]?[a-zA-Z0-9]+)*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    
+    
         if (!emailRegex.test(email)) {
             alert('Please enter a valid email address.');
+            // emailInput.focus();
             return;
         }
-
-        // Here you would typically send this data to a server
         // For demo purposes, let's just log it to console
         console.log('Form submitted:', { name, email, subject, message });
 
@@ -542,6 +545,20 @@ window.addEventListener('load', () => {
 // Send Email Function
 const sendEmail = (e) => {
     e.preventDefault();
+   
+    const emailInput = e.target.querySelector('input[name="user_email"]');
+    const email = emailInput.value;
+    console.log("email->",email);
+
+    // Simple email validation regex
+    const emailRegex = /^[a-zA-Z0-9]+([._%+-]?[a-zA-Z0-9]+)*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+
+    if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address.');
+        emailInput.focus();
+        return;
+    }
 
     emailjs.sendForm(
         'service_90tvv2i',   // ✅ Your Service ID
@@ -563,9 +580,5 @@ const sendEmail = (e) => {
 function my_email_copy() {
     navigator.clipboard.writeText("dodiyavishvajeeet@gmail.com");
      alert("Copy Email");
-}
-function my_number_copy() {
-    navigator.clipboard.writeText("9712529320");
-     alert("Copy Number");
 }
   

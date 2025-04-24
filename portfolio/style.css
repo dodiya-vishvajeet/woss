@@ -822,9 +822,6 @@ nav {
     justify-content: end;
 }
 
-.dark-mode .image-wrapper {
-    /* box-shadow: 0 10px 30px var(--shadow-color-dark); */
-}
 
 .image-wrapper img {
     transition: transform 0.5s ease;
