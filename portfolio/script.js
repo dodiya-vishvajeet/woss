@@ -560,3 +560,12 @@ const sendEmail = (e) => {
     );
 };
 
+function my_email_copy() {
+    navigator.clipboard.writeText("dodiyavishvajeeet@gmail.com");
+     alert("Copy Email");
+}
+function my_number_copy() {
+    navigator.clipboard.writeText("9712529320");
+     alert("Copy Number");
+}
+  
