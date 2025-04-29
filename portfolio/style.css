@@ -1502,6 +1502,9 @@ footer {
     justify-content: center;
     color: white;
     transition: var(--transition);
+    position: fixed;
+   right: 30px;
+   bottom: 20px;
 }
 
 .dark-mode .back-to-top {
